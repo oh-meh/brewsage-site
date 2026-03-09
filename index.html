@@ -251,6 +251,49 @@
       text-decoration: none;
     }
 
+    /* ── Hero two-column layout ── */
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-content {
+      text-align: left;
+    }
+    .hero-content .hero-sub {
+      margin: 0 0 40px;
+    }
+    .hero-content .hero-actions {
+      justify-content: flex-start;
+    }
+    .hero-image {
+      display: flex;
+      justify-content: center;
+    }
+    .hero-image img {
+      max-width: 420px;
+      width: 100%;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .hero-content {
+        text-align: center;
+      }
+      .hero-content .hero-sub {
+        margin: 0 auto 40px;
+      }
+      .hero-content .hero-actions {
+        justify-content: center;
+      }
+      .hero-image img {
+        max-width: 340px;
+      }
+    }
 
     /* ── Features ── */
     .features {
@@ -569,20 +612,23 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="container">
-      <div class="hero-sparkle">✦ AI-Powered Coffee Coaching</div>
-      <h1>Stop Guessing.<br />Start <em>Brewing</em>.</h1>
-      <p class="hero-sub">
-        Log your brews. Dial in your machine. Discover beans you'll love.
-        BrewSage learns how you taste and coaches you toward better coffee — every cup.
-      </p>
-      <div class="hero-actions">
-        <a href="https://tally.so/r/eqAeBQ" class="btn-primary">
-          Join the Beta →
-        </a>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-sparkle">✦ AI-Powered Coffee Coaching</div>
+        <h1>Stop Guessing.<br />Start <em>Brewing</em>.</h1>
+        <p class="hero-sub">
+          Log your brews. Dial in your machine. Discover beans you'll love.
+          BrewSage learns how you taste and coaches you toward better coffee — every cup.
+        </p>
+        <div class="hero-actions">
+          <a href="https://tally.so/r/eqAeBQ" class="btn-primary">
+            Join the Beta →
+          </a>
+        </div>
       </div>
-
-
+      <div class="hero-image">
+        <img src="MockupViews_2x_PNG_20260309_497.png" alt="BrewSage app screenshots showing Home and Sage screens" />
+      </div>
     </div>
   </section>
 
