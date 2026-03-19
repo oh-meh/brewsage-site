@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — BrewSage</title>
+  <meta name="description" content="BrewSage Terms of Service. Understand your rights and responsibilities when using our AI-powered coffee brewing coach." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Terms of Service — BrewSage" />
+  <meta property="og:description" content="Terms of Service for BrewSage, the AI-powered coffee brewing coach. Your data belongs to you." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brewsage.ai/terms" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #1A1210;
+      --card: #2A2220;
+      --accent: #D4A574;
+      --accent-glow: rgba(212, 165, 116, 0.2);
+      --text: #F0ECE4;
+      --text-secondary: #B8AFA6;
+      --text-muted: #7A706A;
+      --border: #3A322E;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 720px;
+      width: 100%;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      display: block;
+      margin: 0 auto 32px;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .effective-date {
+      text-align: center;
+      font-size: 15px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    /* Table of Contents */
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+    .toc-title {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .toc ol {
+      list-style: decimal;
+      padding-left: 20px;
+    }
+    .toc li {
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .toc a {
+      color: var(--text-secondary);
+      transition: color 0.2s;
+    }
+    .toc a:hover { color: var(--accent); text-decoration: none; }
+
+    /* Sections */
+    .section {
+      margin-bottom: 36px;
+      scroll-margin-top: 24px;
+    }
+    .section h2 {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 3vw, 24px);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section h3 {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      margin-top: 20px;
+    }
+    .section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .section ul {
+      list-style: disc;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .section ul li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+
+    /* All-caps legal sections */
+    .legal-caps {
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 0.01em;
+      line-height: 1.75;
+    }
+
+    /* Contact block */
+    .contact-block {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-top: 8px;
+    }
+    .contact-block p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 4px;
+    }
+    .contact-block p:last-child { margin-bottom: 0; }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent);
+      transition: transform 0.2s;
+      margin-top: 48px;
+    }
+    .back-link:hover {
+      transform: translateX(4px);
+      text-decoration: none;
+    }
+
+    .legal-nav {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <img src="icon.png" alt="BrewSage" class="logo" />
+    <h1>Terms of Service</h1>
+    <p class="effective-date">Effective Date: March 19, 2026</p>
+
+    <nav class="toc" aria-label="Table of contents">
+      <div class="toc-title">Contents</div>
+      <ol>
+        <li><a href="#agreement">Agreement to Terms</a></li>
+        <li><a href="#the-service">The Service</a></li>
+        <li><a href="#eligibility">Eligibility</a></li>
+        <li><a href="#user-data">User Data and Ownership</a></li>
+        <li><a href="#ai-features">AI Features and Disclaimers</a></li>
+        <li><a href="#acceptable-use">Acceptable Use</a></li>
+        <li><a href="#intellectual-property">Intellectual Property</a></li>
+        <li><a href="#subscriptions">Subscriptions and Payments (When Available)</a></li>
+        <li><a href="#termination">Termination and Data Deletion</a></li>
+        <li><a href="#disclaimers">Disclaimers</a></li>
+        <li><a href="#limitation-of-liability">Limitation of Liability</a></li>
+        <li><a href="#indemnification">Indemnification</a></li>
+        <li><a href="#dispute-resolution">Dispute Resolution</a></li>
+        <li><a href="#governing-law">Governing Law</a></li>
+        <li><a href="#changes">Changes to These Terms</a></li>
+        <li><a href="#third-party-services">Third-Party Services</a></li>
+        <li><a href="#miscellaneous">Miscellaneous</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <div class="section" id="agreement">
+      <h2>1. Agreement to Terms</h2>
+      <p>By downloading, installing, or using BrewSage (the "App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree, please do not use the App.</p>
+      <p>BrewSage is operated by BrewSage LLC, a New Jersey limited liability company ("we," "us," or "our"). You can reach us at <a href="mailto:hello@brewsage.ai">hello@brewsage.ai</a>.</p>
+    </div>
+
+    <div class="section" id="the-service">
+      <h2>2. The Service</h2>
+      <p>BrewSage is an AI-powered coffee brewing coach designed for home brewers. The App lets you log brews, track beans and equipment, and receive AI-generated coaching to help improve your technique and explore new coffee.</p>
+      <p>The App is available on iOS (via Apple's App Store or TestFlight) and Android (via Google Play). Additional features, including a Pro subscription tier, may become available in the future. We'll update these Terms as needed when that happens.</p>
+    </div>
+
+    <div class="section" id="eligibility">
+      <h2>3. Eligibility</h2>
+      <p>You must be at least 13 years old to use BrewSage. If you are under 18, you represent that a parent or legal guardian has reviewed and agreed to these Terms on your behalf. We do not knowingly collect personal information from children under 13.</p>
+    </div>
+
+    <div class="section" id="user-data">
+      <h2>4. User Data and Ownership</h2>
+
+      <h3>4.1 Your Data Belongs to You</h3>
+      <p>Your brew logs, bean details, equipment profiles, preferences, and any other data you enter into the App ("User Data") belong to you. We do not claim ownership of your User Data.</p>
+
+      <h3>4.2 Local-First Storage</h3>
+      <p>BrewSage uses a local-first architecture. Your User Data is stored on your device in a local database. There are no user accounts, and we do not sync your data to the cloud. If you delete the App or lose your device, your User Data cannot be recovered by us.</p>
+
+      <h3>4.3 How We Process Your Data</h3>
+      <p>When you use AI features (such as brew coaching or photo label scanning), relevant portions of your User Data are sent to our API proxy to generate personalized responses. This data is processed in real time and is not stored on our servers. For full details, please see our <a href="privacy.html">Privacy Policy</a>.</p>
+    </div>
+
+    <div class="section" id="ai-features">
+      <h2>5. AI Features and Disclaimers</h2>
+
+      <h3>5.1 AI Coaching Is Informational Only</h3>
+      <p>BrewSage's AI-generated recommendations — including brewing tips, technique adjustments, recipe suggestions, and bean recommendations — are provided for informational and entertainment purposes only. They are not professional advice.</p>
+
+      <h3>5.2 Not a Substitute for Food Safety Guidance</h3>
+      <p>AI coaching is not a substitute for food safety guidance or professional advice regarding the handling, preparation, or consumption of food and beverages. You are responsible for following safe food-handling practices and for any decisions you make based on the App's suggestions.</p>
+
+      <h3>5.3 Accuracy</h3>
+      <p>AI-generated content may occasionally be inaccurate, incomplete, or out of date. We do our best to provide helpful coaching, but we cannot guarantee the accuracy or reliability of any AI output. Use your own judgment.</p>
+    </div>
+
+    <div class="section" id="acceptable-use">
+      <h2>6. Acceptable Use</h2>
+      <p>You agree to use BrewSage only for its intended purpose — as a personal coffee brewing tool. You agree not to:</p>
+      <ul>
+        <li>Reverse-engineer, decompile, or disassemble the App or its underlying systems.</li>
+        <li>Attempt to access, tamper with, or exploit our API proxy or backend services.</li>
+        <li>Use automated tools (bots, scrapers, etc.) to interact with the App or our API in an unauthorized manner.</li>
+        <li>Use the App in any way that violates applicable law or regulation.</li>
+        <li>Redistribute, resell, or sublicense the App or its content.</li>
+      </ul>
+      <p>We reserve the right to suspend or terminate access for anyone who violates these Terms.</p>
+    </div>
+
+    <div class="section" id="intellectual-property">
+      <h2>7. Intellectual Property</h2>
+
+      <h3>7.1 Our Content</h3>
+      <p>The BrewSage name, logo, visual design, UI elements, AI coaching outputs, and all other content provided through the App ("BrewSage Content") are owned by or licensed to BrewSage LLC. You may not copy, modify, distribute, or create derivative works from BrewSage Content except as needed to use the App for its intended purpose.</p>
+
+      <h3>7.2 Open-Source Components</h3>
+      <p>BrewSage may include open-source software components, each governed by its own license. Nothing in these Terms restricts your rights under those licenses.</p>
+
+      <h3>7.3 Feedback</h3>
+      <p>If you provide suggestions, ideas, or feedback about the App, you grant us a non-exclusive, royalty-free, perpetual license to use that feedback to improve BrewSage. You are never obligated to provide feedback.</p>
+    </div>
+
+    <div class="section" id="subscriptions">
+      <h2>8. Subscriptions and Payments (When Available)</h2>
+      <p>BrewSage does not currently offer paid subscriptions or in-app purchases. When a Pro subscription tier becomes available, the following will apply:</p>
+      <ul>
+        <li>Subscriptions will be managed through Apple's App Store or Google Play's billing systems via RevenueCat. You will be billed according to the terms presented at the time of purchase.</li>
+        <li>Subscription prices, features, and billing intervals will be displayed in the App before you subscribe.</li>
+        <li>You can manage or cancel your subscription through your device's App Store or Google Play settings at any time.</li>
+        <li>Refunds are handled by Apple or Google in accordance with their respective refund policies.</li>
+      </ul>
+      <p>We will update this section with specific pricing and terms before any paid features go live.</p>
+    </div>
+
+    <div class="section" id="termination">
+      <h2>9. Termination and Data Deletion</h2>
+
+      <h3>9.1 Your Right to Stop Using BrewSage</h3>
+      <p>You can stop using BrewSage at any time by deleting the App from your device. Because your data is stored locally, deleting the App removes your User Data.</p>
+
+      <h3>9.2 Our Right to Terminate</h3>
+      <p>We may suspend or terminate your access to BrewSage if you violate these Terms or if we discontinue the service. We will make reasonable efforts to provide notice when possible, but we are not obligated to do so.</p>
+
+      <h3>9.3 Effect of Termination</h3>
+      <p>Upon termination, your right to use the App ends. Sections that by their nature should survive (including Disclaimers, Limitation of Liability, Indemnification, and Governing Law) will continue to apply.</p>
+    </div>
+
+    <div class="section" id="disclaimers">
+      <h2>10. Disclaimers</h2>
+      <p class="legal-caps">BrewSage is provided "as is" and "as available" without warranties of any kind, whether express, implied, or statutory. We disclaim all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+      <p>We do not warrant that the App will be uninterrupted, error-free, or secure, or that AI-generated content will be accurate, complete, or suitable for any particular purpose.</p>
+    </div>
+
+    <div class="section" id="limitation-of-liability">
+      <h2>11. Limitation of Liability</h2>
+      <p class="legal-caps">To the maximum extent permitted by applicable law, BrewSage LLC and its officers, members, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of data, loss of profits, or personal injury, arising out of or related to your use of the App.</p>
+      <p class="legal-caps">Our total liability to you for all claims arising from or related to these Terms or the App shall not exceed the amount you paid to us in the twelve (12) months preceding the claim, or fifty dollars ($50), whichever is greater.</p>
+      <p>Some jurisdictions do not allow the exclusion or limitation of certain damages. In those jurisdictions, our liability is limited to the fullest extent permitted by law.</p>
+    </div>
+
+    <div class="section" id="indemnification">
+      <h2>12. Indemnification</h2>
+      <p>You agree to indemnify, defend, and hold harmless BrewSage LLC and its members, officers, employees, and agents from any claims, liabilities, damages, losses, or expenses (including reasonable attorney's fees) arising out of or related to your use of the App, your violation of these Terms, or your violation of any law or third-party rights.</p>
+    </div>
+
+    <div class="section" id="dispute-resolution">
+      <h2>13. Dispute Resolution</h2>
+
+      <h3>13.1 Informal Resolution First</h3>
+      <p>Before filing any formal legal action, you agree to contact us at <a href="mailto:hello@brewsage.ai">hello@brewsage.ai</a> and attempt to resolve the dispute informally for at least thirty (30) days.</p>
+
+      <h3>13.2 Binding Arbitration</h3>
+      <p>If we cannot resolve the dispute informally, you and BrewSage LLC agree to resolve it through binding arbitration administered by the American Arbitration Association ("AAA") under its Consumer Arbitration Rules. Arbitration will take place in Bergen County, New Jersey, or remotely if mutually agreed.</p>
+
+      <h3>13.3 Class Action Waiver</h3>
+      <p>You and BrewSage LLC agree that any dispute resolution proceedings will be conducted only on an individual basis and not as part of any class, consolidated, or representative action.</p>
+
+      <h3>13.4 Exceptions</h3>
+      <p>Either party may bring claims in small claims court if the claims qualify. Either party may also seek injunctive or other equitable relief in a court of competent jurisdiction to protect intellectual property rights.</p>
+    </div>
+
+    <div class="section" id="governing-law">
+      <h2>14. Governing Law</h2>
+      <p>These Terms are governed by and construed in accordance with the laws of the State of New Jersey, without regard to its conflict-of-law principles. To the extent that litigation is permitted under these Terms, you consent to the exclusive jurisdiction and venue of the state and federal courts located in New Jersey.</p>
+    </div>
+
+    <div class="section" id="changes">
+      <h2>15. Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. When we make material changes, we will update the "Effective Date" at the top and, where practical, notify you through the App. Your continued use of BrewSage after changes are posted constitutes your acceptance of the updated Terms.</p>
+    </div>
+
+    <div class="section" id="third-party-services">
+      <h2>16. Third-Party Services</h2>
+      <p>BrewSage relies on third-party services to function, including Anthropic (AI), Cloudflare (API infrastructure), PostHog (analytics), Sentry (crash reporting), and Supabase (telemetry). Your use of the App may be subject to those providers' terms and policies. We are not responsible for the practices of third-party services.</p>
+      <p>The App is distributed through Apple's App Store and Google Play. Your use of those platforms is governed by their respective terms of service.</p>
+    </div>
+
+    <div class="section" id="miscellaneous">
+      <h2>17. Miscellaneous</h2>
+      <ul>
+        <li><strong>Entire Agreement:</strong> These Terms, together with our <a href="privacy.html">Privacy Policy</a>, constitute the entire agreement between you and BrewSage LLC regarding the App.</li>
+        <li><strong>Severability:</strong> If any provision of these Terms is found to be unenforceable, the remaining provisions will remain in full force and effect.</li>
+        <li><strong>Waiver:</strong> Our failure to enforce any right or provision of these Terms does not constitute a waiver of that right or provision.</li>
+        <li><strong>Assignment:</strong> You may not assign or transfer your rights under these Terms without our prior written consent. We may assign our rights without restriction.</li>
+        <li><strong>No Third-Party Beneficiaries:</strong> These Terms do not create any rights for anyone other than you and BrewSage LLC.</li>
+      </ul>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>18. Contact Us</h2>
+      <p>If you have questions about these Terms, contact us:</p>
+      <div class="contact-block">
+        <p><strong>BrewSage LLC</strong></p>
+        <p>69 Morton Drive</p>
+        <p>Ramsey, NJ 07446</p>
+        <p>Email: <a href="mailto:hello@brewsage.ai">hello@brewsage.ai</a></p>
+        <p>Web: <a href="https://brewsage.ai">brewsage.ai</a></p>
+      </div>
+    </div>
+
+    <p class="legal-nav">See also: <a href="privacy.html">Privacy Policy</a></p>
+
+    <a href="https://brewsage.ai" class="back-link">← Back to BrewSage</a>
+  </div>
+</body>
+</html>

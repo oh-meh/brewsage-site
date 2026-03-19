@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — BrewSage</title>
+  <meta name="description" content="BrewSage Privacy Policy. Learn how we handle your data with our local-first architecture — your brewing data stays on your device." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy — BrewSage" />
+  <meta property="og:description" content="BrewSage is built local-first. Your brewing data stays on your device. Read our full privacy policy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brewsage.ai/privacy" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #1A1210;
+      --card: #2A2220;
+      --accent: #D4A574;
+      --accent-glow: rgba(212, 165, 116, 0.2);
+      --text: #F0ECE4;
+      --text-secondary: #B8AFA6;
+      --text-muted: #7A706A;
+      --border: #3A322E;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'DM Sans', -apple-system, sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 256px 256px;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .wrapper {
+      max-width: 720px;
+      width: 100%;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 18px;
+      display: block;
+      margin: 0 auto 32px;
+    }
+
+    h1 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 5vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .effective-date {
+      text-align: center;
+      font-size: 15px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    /* Table of Contents */
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+    .toc-title {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 12px;
+    }
+    .toc ol {
+      list-style: decimal;
+      padding-left: 20px;
+    }
+    .toc li {
+      margin-bottom: 6px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .toc a {
+      color: var(--text-secondary);
+      transition: color 0.2s;
+    }
+    .toc a:hover { color: var(--accent); text-decoration: none; }
+
+    /* Sections */
+    .section {
+      margin-bottom: 36px;
+      scroll-margin-top: 24px;
+    }
+    .section h2 {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 3vw, 24px);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section h3 {
+      font-family: var(--font-display);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 8px;
+      margin-top: 20px;
+    }
+    .section p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 12px;
+    }
+    .section ul {
+      list-style: disc;
+      padding-left: 24px;
+      margin-bottom: 12px;
+    }
+    .section ul li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 6px;
+    }
+
+    /* Provider table */
+    .provider-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    .provider-table th,
+    .provider-table td {
+      padding: 12px 14px;
+      text-align: left;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .provider-table th {
+      background: var(--card);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .provider-table td:first-child {
+      color: var(--text);
+      font-weight: 500;
+      white-space: nowrap;
+    }
+    @media (max-width: 600px) {
+      .provider-table { font-size: 13px; }
+      .provider-table th,
+      .provider-table td { padding: 10px 10px; }
+      .provider-table td:first-child { white-space: normal; }
+    }
+
+    /* Contact block */
+    .contact-block {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px 28px;
+      margin-top: 8px;
+    }
+    .contact-block p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 4px;
+    }
+    .contact-block p:last-child { margin-bottom: 0; }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--accent);
+      transition: transform 0.2s;
+      margin-top: 48px;
+    }
+    .back-link:hover {
+      transform: translateX(4px);
+      text-decoration: none;
+    }
+
+    .legal-nav {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <img src="icon.png" alt="BrewSage" class="logo" />
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective Date: March 19, 2026</p>
+
+    <nav class="toc" aria-label="Table of contents">
+      <div class="toc-title">Contents</div>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#information-we-collect">Information We Collect</a></li>
+        <li><a href="#how-we-use-information">How We Use Information</a></li>
+        <li><a href="#how-we-share-information">How We Share Information</a></li>
+        <li><a href="#data-retention">Data Retention</a></li>
+        <li><a href="#data-security">Data Security</a></li>
+        <li><a href="#childrens-privacy">Children's Privacy (COPPA Compliance)</a></li>
+        <li><a href="#in-app-purchases">In-App Purchases (When Available)</a></li>
+        <li><a href="#your-rights">Your Rights and Choices</a></li>
+        <li><a href="#third-party-links">Third-Party Links and Services</a></li>
+        <li><a href="#international-users">International Users</a></li>
+        <li><a href="#changes">Changes to This Privacy Policy</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ol>
+    </nav>
+
+    <div class="section" id="introduction">
+      <h2>1. Introduction</h2>
+      <p>This Privacy Policy explains how BrewSage LLC ("we," "us," or "our") handles information when you use the BrewSage mobile application ("App"). We believe in being straightforward: BrewSage is designed with a local-first architecture, which means your personal brewing data stays on your device. We only process data when necessary to deliver AI features, and we don't maintain user accounts or cloud storage.</p>
+      <p>By using BrewSage, you agree to the practices described in this policy. If you don't agree, please discontinue use of the App.</p>
+    </div>
+
+    <div class="section" id="information-we-collect">
+      <h2>2. Information We Collect</h2>
+
+      <h3>2.1 Information Stored on Your Device (Not Collected by Us)</h3>
+      <p>BrewSage stores your brew logs, bean details, equipment profiles, and preferences in a local SQLite database on your device. This data never leaves your device unless you specifically use an AI feature that requires it (see Section 2.2). We cannot access, view, or recover this data.</p>
+
+      <h3>2.2 Information Processed Through AI Features</h3>
+      <p>When you use AI coaching or photo label scanning, certain data is sent to our API proxy (api.brewsage.ai) for processing:</p>
+      <ul>
+        <li><strong>AI Coaching:</strong> Relevant brew data and bean details from your current session are sent to the Anthropic Claude API to generate personalized coaching. No conversation history is stored on our servers.</li>
+        <li><strong>Photo Label Scanning:</strong> When you photograph a coffee bag label, the image is sent to the Claude Vision API to extract bean details. Photos are processed in real time and immediately discarded. We do not store your photos on our servers.</li>
+      </ul>
+      <p>When you use an AI feature, data flows from the App to our Cloudflare Worker proxy (api.brewsage.ai), which forwards it to Anthropic's servers for processing. All communication is encrypted over HTTPS, and no data is logged or persisted on our servers. Anthropic does not use data submitted through its API to train its models.</p>
+
+      <h3>2.3 Anonymous Telemetry (Opt-In, Default Off)</h3>
+      <p>If you opt in to anonymous telemetry in the App's settings, anonymized brew and bean data is sent to Supabase for aggregate product improvement. This data is keyed to a randomly generated device identifier and contains no personal information — no names, email addresses, or account information (because BrewSage does not have accounts). You can opt out at any time in the App's settings, and we will stop collecting telemetry data from your device.</p>
+
+      <h3>2.4 Analytics</h3>
+      <p>We use PostHog for behavioral analytics to understand how people use the App (for example, events like "brew logged" or "onboarding completed"). This is standard mobile analytics that tracks usage patterns. No personally identifiable information (PII) is collected through PostHog.</p>
+
+      <h3>2.5 Crash Reporting</h3>
+      <p>We use Sentry to collect crash reports so we can identify and fix bugs. Sentry is configured with sendDefaultPii set to false, meaning no personally identifiable information is included in crash reports. Reports contain technical data such as device type, OS version, and stack traces.</p>
+
+      <h3>2.6 Information We Do Not Collect</h3>
+      <p>To be clear, BrewSage does not collect:</p>
+      <ul>
+        <li>Names, email addresses, or any account credentials (we have no accounts)</li>
+        <li>Location data</li>
+        <li>Contacts, calendar data, or other device data unrelated to the App</li>
+        <li>Payment or financial information (see Section 8)</li>
+        <li>Health or biometric data</li>
+      </ul>
+    </div>
+
+    <div class="section" id="how-we-use-information">
+      <h2>3. How We Use Information</h2>
+      <p>We use the limited information we process for the following purposes:</p>
+      <ul>
+        <li>To provide AI-powered coaching and photo label scanning features</li>
+        <li>To improve the App based on aggregate, anonymized usage data (if you opt in to telemetry)</li>
+        <li>To understand usage patterns and improve the user experience (analytics)</li>
+        <li>To identify and fix bugs and crashes (crash reporting)</li>
+      </ul>
+    </div>
+
+    <div class="section" id="how-we-share-information">
+      <h2>4. How We Share Information</h2>
+      <p>We do not sell your data. Period. We share data only with the following service providers, solely to operate the App:</p>
+
+      <table class="provider-table">
+        <thead>
+          <tr>
+            <th>Provider</th>
+            <th>Purpose</th>
+            <th>Data Shared</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Anthropic</td>
+            <td>AI coaching and vision</td>
+            <td>Brew data, bean details, and photos (processed in real time, not stored)</td>
+          </tr>
+          <tr>
+            <td>Cloudflare</td>
+            <td>API proxy infrastructure</td>
+            <td>API requests in transit (not logged)</td>
+          </tr>
+          <tr>
+            <td>PostHog</td>
+            <td>Behavioral analytics</td>
+            <td>Anonymous event data (no PII)</td>
+          </tr>
+          <tr>
+            <td>Sentry</td>
+            <td>Crash reporting</td>
+            <td>Device info and stack traces (no PII)</td>
+          </tr>
+          <tr>
+            <td>Supabase</td>
+            <td>Anonymous telemetry</td>
+            <td>Anonymized brew/bean data with random device ID (opt-in only)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>We may also disclose information if required by law, legal process, or government request, or to protect the rights, safety, or property of BrewSage LLC, our users, or the public.</p>
+    </div>
+
+    <div class="section" id="data-retention">
+      <h2>5. Data Retention</h2>
+      <ul>
+        <li><strong>On-device data:</strong> Retained on your device until you delete it or uninstall the App. We have no access to it.</li>
+        <li><strong>AI processing data:</strong> Not retained. Data sent for AI coaching and photo scanning is processed in real time and not stored.</li>
+        <li><strong>Anonymous telemetry:</strong> Retained in aggregate form for product improvement. Because it is anonymous and not linked to any identity, it cannot be attributed to any individual.</li>
+        <li><strong>Analytics data:</strong> Retained by PostHog per their standard retention policies.</li>
+        <li><strong>Crash reports:</strong> Retained by Sentry per their standard retention policies.</li>
+      </ul>
+    </div>
+
+    <div class="section" id="data-security">
+      <h2>6. Data Security</h2>
+      <p>We take reasonable technical and organizational measures to protect data in transit. All communication between the App and our services uses HTTPS encryption. Our API proxy runs on Cloudflare's infrastructure with standard security protections.</p>
+      <p>That said, no method of electronic transmission or storage is 100% secure. We cannot guarantee absolute security, but we are committed to following industry-standard practices.</p>
+    </div>
+
+    <div class="section" id="childrens-privacy">
+      <h2>7. Children's Privacy (COPPA Compliance)</h2>
+      <p>BrewSage is not directed at children under 13. We do not knowingly collect personal information from children under 13. Since BrewSage does not have user accounts and does not collect personal information, the risk is minimal. However, if we become aware that a child under 13 has somehow provided us with personal information, we will take steps to delete it. If you believe a child under 13 has provided us with personal data, please contact us at <a href="mailto:hello@brewsage.ai">hello@brewsage.ai</a>.</p>
+    </div>
+
+    <div class="section" id="in-app-purchases">
+      <h2>8. In-App Purchases (When Available)</h2>
+      <p>BrewSage does not currently offer in-app purchases or subscriptions. When a Pro subscription tier becomes available, all payments will be processed through Apple's App Store or Google Play's billing systems via RevenueCat. We will not directly collect or store any payment card information. RevenueCat and the respective platform handle all billing data. We will update this section before any paid features launch.</p>
+    </div>
+
+    <div class="section" id="your-rights">
+      <h2>9. Your Rights and Choices</h2>
+
+      <h3>9.1 All Users</h3>
+      <ul>
+        <li><strong>Telemetry opt-out:</strong> You can disable anonymous telemetry at any time in the App's settings. It is off by default.</li>
+        <li><strong>Data deletion:</strong> You can delete all your data by uninstalling the App. Since your data is stored locally and we do not maintain accounts, uninstalling is the most complete way to remove your data.</li>
+        <li><strong>AI features:</strong> You choose when to use AI features. If you don't use them, no data is sent to our API.</li>
+      </ul>
+
+      <h3>9.2 California Residents (CCPA/CPRA)</h3>
+      <p>If you are a California resident, the California Consumer Privacy Act (as amended by the California Privacy Rights Act) provides you with additional rights:</p>
+      <ul>
+        <li><strong>Right to Know:</strong> You have the right to know what personal information we collect, use, and disclose. This Privacy Policy is designed to provide that transparency. Because BrewSage does not maintain user accounts and collects minimal data, the information described in Section 2 represents the full scope of our data practices.</li>
+        <li><strong>Right to Delete:</strong> You can delete your on-device data by uninstalling the App. Because anonymous telemetry is keyed to a random device identifier and cannot be linked to any individual, it may not be possible to identify or delete specific telemetry records. If you have concerns, contact us at <a href="mailto:hello@brewsage.ai">hello@brewsage.ai</a>.</li>
+        <li><strong>Right to Opt Out of Sale/Sharing:</strong> We do not sell or share your personal information as defined under the CCPA/CPRA.</li>
+        <li><strong>Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights.</li>
+      </ul>
+      <p>To exercise your rights, contact us at <a href="mailto:hello@brewsage.ai">hello@brewsage.ai</a>. We will respond within 45 days as required by law.</p>
+
+      <h3>9.3 New Jersey Residents (New Jersey Data Privacy Act)</h3>
+      <p>If you are a New Jersey resident, the New Jersey Data Privacy Act provides you with the following rights:</p>
+      <ul>
+        <li><strong>Right to Access:</strong> You have the right to confirm whether we are processing your personal data and to access that data.</li>
+        <li><strong>Right to Correct:</strong> You have the right to correct inaccuracies in your personal data. Since your data is stored locally on your device, you can correct it directly in the App.</li>
+        <li><strong>Right to Delete:</strong> You have the right to request deletion of your personal data. You can delete your on-device data by uninstalling the App. Because anonymous telemetry is keyed to a random device identifier and cannot be linked to any individual, it may not be possible to identify or delete specific telemetry records. If you have concerns, contact us at <a href="mailto:hello@brewsage.ai">hello@brewsage.ai</a>.</li>
+        <li><strong>Right to Data Portability:</strong> You have the right to obtain your personal data in a portable format. Since your data is stored locally on your device, it is already in your possession.</li>
+        <li><strong>Right to Opt Out:</strong> You have the right to opt out of targeted advertising, sale of personal data, and profiling. We do not engage in any of these activities.</li>
+      </ul>
+      <p>To exercise your rights, contact us at <a href="mailto:hello@brewsage.ai">hello@brewsage.ai</a>. We will respond within 45 days. If we deny your request, you may appeal by contacting us at the same address.</p>
+    </div>
+
+    <div class="section" id="third-party-links">
+      <h2>10. Third-Party Links and Services</h2>
+      <p>The App may contain links to third-party websites or services. This Privacy Policy does not apply to those third-party services. We encourage you to review the privacy policies of any third-party services you visit.</p>
+    </div>
+
+    <div class="section" id="international-users">
+      <h2>11. International Users</h2>
+      <p>BrewSage is operated from the United States. If you use the App from outside the United States, please be aware that data processed through our AI features is transmitted to servers in the United States. By using the App, you consent to this transfer. We process data through our service providers as described in Section 4.</p>
+    </div>
+
+    <div class="section" id="changes">
+      <h2>12. Changes to This Privacy Policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we make material changes, we will update the "Effective Date" at the top and, where practical, notify you through the App. Your continued use of BrewSage after changes are posted constitutes acceptance of the updated policy.</p>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>13. Contact Us</h2>
+      <p>If you have questions about this Privacy Policy or want to exercise your privacy rights, contact us:</p>
+      <div class="contact-block">
+        <p><strong>BrewSage LLC</strong></p>
+        <p>69 Morton Drive</p>
+        <p>Ramsey, NJ 07446</p>
+        <p>Email: <a href="mailto:hello@brewsage.ai">hello@brewsage.ai</a></p>
+        <p>Web: <a href="https://brewsage.ai">brewsage.ai</a></p>
+      </div>
+    </div>
+
+    <p class="legal-nav">See also: <a href="terms.html">Terms of Service</a></p>
+
+    <a href="https://brewsage.ai" class="back-link">← Back to BrewSage</a>
+  </div>
+</body>
+</html>
