@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brewsage.ai/sitemap.xml
+Llms-txt: https://brewsage.ai/llms.txt

@@ -1,0 +1,47 @@
+# BrewSage
+
+> AI-powered coffee coaching app for iOS and Android. Stop wasting beans. Dial in faster. Discover coffee you'll love.
+
+## About
+
+BrewSage is the coffee app that actually helps you get better. Most coffee apps track what you brew — BrewSage tells you what to change next. Built for the much larger market of enthusiastic home brewers who want guidance, not just a logbook.
+
+Currently in popular beta with a growing community of home coffee enthusiasts testing across iOS and Android.
+
+## How It Works
+
+Two AI personalities power the experience:
+
+- **Brew Coach** — Your technique advisor. Analyzes your brew history and suggests specific setting adjustments for your exact machine. Gets smarter with every brew you log.
+- **The Brew Sage** — Your coffee sommelier. Builds a taste identity from your brewing data and recommends beans you'll actually love, including a "stretch pick" to push your palate.
+
+## What Makes BrewSage Different
+
+- **Machine-specific coaching** — Not generic advice. BrewSage knows the difference between a KitchenAid KF7, a Moccamaster KBGV Select, and an AeroPress, and coaches accordingly.
+- **AI that learns your patterns** — Setting-outcome correlations, cross-bean analysis, dialed-in detection, and taste evolution tracking — all computed from your real brew data.
+- **Meets you where you are** — Supports super-automatics, semi-autos, pour-over, batch brewers, and more. You don't need a refractometer or a $3,000 setup.
+- **Local-first** — Your data lives on your device. Works offline. No account required.
+
+## Supported Equipment
+
+15+ machine types with dedicated brew forms: KitchenAid KF6/KF7/KF8, Moccamaster (KBGV Select, KBG, Cup-One), Nespresso Momento 100, xBloom Studio, Hario V60, Chemex, AeroPress, Kalita Wave, French Press, Clever Dripper, Fellow Stagg, Moka Pot, Semi-Auto Espresso, and more. 36 grinder presets across 14 brands.
+
+## Key Features
+
+- Post-brew AI coaching that learns your patterns
+- Pre-brew guidance for new beans (First Brew Guide)
+- Bean label scanning via photo
+- Personalized taste identity and bean recommendations
+- Roaster bean lookup with auto-fill for partner roasters
+- Taste evolution tracking over time
+- Beautiful warm "Roastery" design theme (light and dark modes)
+
+## Links
+
+- [Website](https://brewsage.ai)
+- [Privacy Policy](https://brewsage.ai/privacy.html)
+- [Terms of Service](https://brewsage.ai/terms.html)
+
+## Contact
+
+hello@brewsage.ai
